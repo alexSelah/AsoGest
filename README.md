@@ -28,7 +28,7 @@ Para instalar una copia del programa CiberPYME y ejecutarla en local se deben se
 6. Modificar los HTACCESS de la carpeta raiz y de la carpeta public para gestionar los redireccionamientos correspondientes del TOMCAT. (El de la carpeta Public, si hemos creado bien el de la raiz, no hace falta tocarlo, es el que trae por defecto Laravel y funciona bien tal y como está)
 7. Modificar el .env de la carpeta raiz para reflejar los cambios correspondientes a la conexión con la base de datos y el entorno de desarrollo.
 
-Para más información y una guía paso a paso, puedes leer las ![Instrucciones de Instalación](./storage/app/public/documentos/Instrucciones AsoGest.pdf)
+Para más información y una guía paso a paso, puedes leer las [Instrucciones de Instalación](Instrucciones_Instalación_AsoGest.pdf)
 
 
 ## Que se ha implementado hasta ahora ⚙️
