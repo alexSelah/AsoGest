@@ -1,6 +1,6 @@
 # AsoGest
 
-AsoGest fue creado inicialmente para la asociaciónd de juegos de mesa, rol y wargames a la que estuve asociado. La web fue creada en 2019, y desde entonces la he implementado y mejorando. Lleva más de dos años en funcionamiento en la asociación.
+AsoGest fue creado inicialmente para la asociación de juegos de mesa, rol y wargames a la que estuve asociado. La web fue creada en 2019, y desde entonces la he implementado y mejorando. Lleva más de dos años en funcionamiento en la asociación.
 
 Para desarrollar el proyecto he usado el [framework Laravel](https://github.com/laravel/laravel) por su robustez y facilidad de uso, además de por tener una curva de aprendizaje sencilla. 
 
