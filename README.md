@@ -1,78 +1,124 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+# AsoGest
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+AsoGest fue creado inicialmente para la asociaciónd e juegos de mesa, rol y wargames a la que estuve asociado. fue creada en 2019, y desde entonces la he implementado y mejora.
 
-## About Laravel
+Para desarrollar el proyecto se ha usado el [frameword Laravel](https://github.com/laravel/laravel) por su robustez y facilidad de uso, además de por tener una curva de aprendizaje sencilla. El programa tiene la misma [licencia MIT](./LICENCIA.txt) que Laravel.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+AsoGest sirve para gestionar todos los aspectos administrativos relacionados con una Asociación Cultural, como pueden ser asuntos de secretaría, gestión de cuotas, tesorería, administración de socios, comunicación de socios, etc.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+![Pantalla principal de Asogest](./public/images/welcome.png) 
 
-## Learning Laravel
+La pantalla principal utiliza el sistema de login de Laravel.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Pre-requisitos 📋
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Para la instalación de un proyecto en un entorno de pruebas necesitamos una máquina virtual XAMPP (o similar). Vea las ![Instrucciones de Instalación](./storage/app/public/documentos/Instrucciones AsoGest.pdf) para más detalles.
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+### Instalación 🔧
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
+Aquí está contenido todo el código fuente del proyecto en Laravel. Pero se puede instalar una copia completamente funcional en un servidor local XAMPP o en un servidor de internet.
+Para instalar una copia del programa CiberPYME y ejecutarla en local se deben seguir siguientes pasos, adaptándolos al entorno que se haya escogido. En general deberemos:
 
-## Contributing
+1. Crear un servidor local con XAMPP
+2. Subir la carpera asogest a la carpeta HTDOCS de XAMPP
+3. Abrir la interfaz de MySQL y crear una nueva base de datos llamada "asogest" (o cualquier otro nombre)
+4. Abrir una consola de comandos en la raiz de la carpeta del programa y ejecutar: php artisan key:generate
+5. Ejecutar en la misma consola de comandos: php artisan migrate:fresh --seed
+6. Modificar los HTACCESS de la carpeta raiz y de la carpeta public para gestionar los redireccionamientos correspondientes del TOMCAT. (El de la carpeta Public, si hemos creado bien el de la razi, no hace falta tocarlo, es el que trae por defecto Laravel)
+7. Modificar el .env de la carpeta raiz de ciberpyme para reflejar los cambios correspondientes a la conexión con la base de datos y el entorno de desarrollo.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Para más información y una guía paso a paso, puedes leer las ![Instrucciones de Instalación](./storage/app/public/documentos/Instrucciones AsoGest.pdf)
 
-## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Que se ha implementado hasta ahora ⚙️
 
-## Security Vulnerabilities
+- Gestión de la Secretaría de la asociación:
+    - Vista de Secretario con la gestión completa de socios (creación, edición, etc).
+    - Visor y gestión de las invitaciones del socio.
+    - Habilitar y deshabilitar Socios
+    - Información de acceso a Drive o carpetas compartidas (externas). Se puede cambiar por otras opciones, como gestión de llaves, etc., a través de dos variables personalizables (Acceso Drive y Acceso Junta).
+    - Gestión de las vocalías (creación, eliminación y edición)
+- Gestión de la Tesorería:
+    - Panel de control para el tesorero con visión general del estado de la tesorería.
+    - Gestión de apuntes contables (creación, edición) con ajuste al Plan General Contable (Criterio de Devengo).
+    - Visionado de los apuntes contables en diferentes vistas con filtrado.
+    - Gestión de Cuotas de los socios
+- Creación de tipos de cuota, gestión y renovación de cuotas de socio.
+- Avisos automáticos por email cuando está próximo el vencimiento de la cuota (hay que habilitar el Cron en el servidor)
+- Visionado de las cuotas atrasadas, próximas renovaciones, etc.
+- Moratoria de cuotas
+    - Exportación e Importación de los apuntes contables en Excel, copiados en portapapeles o impresión.
+    - Creación de certificado en PDF del coste de mantenimiento del local (Alquiler)
+    - Creación de informes personalizados de tesorería.
+- Gestión de la ficha del socio
+    - Datos personales (nombre, apellido, dirección, email, teléfono, etc.)
+    - Gestión de eventos creados por el socio (eliminar los eventos y reservas realizadas) (necesaria cuenta de GMAIL)
+    - Gestión por parte del socio de sus invitaciones
+    - Preguntas sobre Privacidad y permisos del socio para comunicaciones.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Al ser un proyecto realizado por mi únicamente (un solo programador), desde cero, espero que contenga bugs y fallos fácilmente solucionables. Además, una refactorización no le vendría mal. Tampoco he seguido ninguna metodología de programación. Se ha hecho por placer. 
 
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Construido con 🛠️
+
+El proyecto ha sido desarrollado en **Laravel**. Se han usado las siguientes librerías y frameworks, con sus versiones, a parte de las que ya trae integradas Laravel:
+
+| LIBRERÍAS | VERSIÓN |
+| -- | -- |
+| **LARAVEL** | 9.40.1 |
+| bacon/bacon-qr-code | 2.0.7 | 
+| balping/json-raw-encoder |v1.0.1 |
+| barryvdh/laravel-dompdf |dev-master 7516caa |
+| brick/math | 0.10.2 |
+| consoletvs/charts | 6.5.6 |
+| dasprid/enum | 1.0.3 |
+| dompdf/dompdf | v2.0.1 |
+| google/apiclient | v2.12.6 |
+| google/apiclient-services | v0.274.0 |
+| google/auth | v1.23.1 |
+| intervention/image | 2.7.2 |
+| jenssegers/agent | v2.6.4 |
+| maatwebsite/excel | 3.1.44 |
+| nesbot/carbon |2.63.0 |
+| simplesoftwareio/simple-qrcode | 4.2.0 |
+| spatie/laravel-google-calendar | 3.5.1 |
+| yajra/laravel-datatables | v9.0.0 |
+| yajra/laravel-datatables-buttons | v9.1.3 |
+| yajra/laravel-datatables-editor | v1.25.1 |
+| yajra/laravel-datatables-fractal | v9.1.0 |
+| yajra/laravel-datatables-html | v9.3.4 |
+| yajra/laravel-datatables-oracle | v10.2.0 |
+
+
+## Contribuyendo 🖇️
+
+Si quieres contribuir al proyecto con sugerencias puedes escribirme a mi email o a través de LinkedIn. O bien puedes hacer una rama del proyecto y modificarla como gustes. ¡Siéntete Libre!
+
+## Ayuda 📖
+
+En la sección de "Hacer un Tour" tendrás más información de cómo funciona el programa. 
+ACTUALIZACION 2022-11-21: Actualmente los videos que hay son de una versión muy obsoleta y anticuada. Se están realizando nuevos videos informativos.
+
+
+## Versionado 📌
+
+Esta no es la primera versión del programa, ya que, después de revisiones, añadidos y mejoras tras varios años de testeo y producción en vivo, esta es la versión 1.4-beta. No se si se realizarán más o el proyecto finalizará aquí. Pero si haces una rama y mejoras algo, agradecería que me enviases los cambios para hacer una segunda versión mejorada.
+
+## Autor ✒️
+
+
+* **Alejandro Campos** - *Trabajo Inicial y desarrollo completo* - [linkedIn](https://www.linkedin.com/in/acamfue/)
+
+## Licencia 📄
+
+Licencia de Creative Commons BY-SA
+![Logo Creative Commons BY-SA](https://licensebuttons.net/l/by-sa/4.0/88x31.png)
+AsoGest Gestor de Asociaciones Culturales by Alejandro Campos is licensed [under a Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional License.](https://creativecommons.org/licenses/by-sa/4.0/)
+
+## Gracias a 🎁
+
+* Primero, gracias a mi Asociación, [Portal Lúdico](https://www.portalludico.com). Aunque ya no siga siendo socio activo, la llevo en mi corazón. 📢
+* Por supuesto a mi familia, que me ha soportado después de tantas horas de programación en los ratos libres 🤓.
+* Por último a toda la gente que crea cosas maravillosas y las comparte libre y gratuítamente.
