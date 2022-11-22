@@ -1,19 +1,18 @@
 # AsoGest
 
-AsoGest fue creado inicialmente para la asociaciónd e juegos de mesa, rol y wargames a la que estuve asociado. fue creada en 2019, y desde entonces la he implementado y mejora.
+AsoGest fue creado inicialmente para la asociaciónd de juegos de mesa, rol y wargames a la que estuve asociado. La web fue creada en 2019, y desde entonces la he implementado y mejorando. Lleva más de dos años en funcionamiento en la asociación.
 
-Para desarrollar el proyecto se ha usado el [frameword Laravel](https://github.com/laravel/laravel) por su robustez y facilidad de uso, además de por tener una curva de aprendizaje sencilla. El programa tiene la misma [licencia MIT](./LICENCIA.txt) que Laravel.
+Para desarrollar el proyecto he usado el [framework Laravel](https://github.com/laravel/laravel) por su robustez y facilidad de uso, además de por tener una curva de aprendizaje sencilla. 
 
-AsoGest sirve para gestionar todos los aspectos administrativos relacionados con una Asociación Cultural, como pueden ser asuntos de secretaría, gestión de cuotas, tesorería, administración de socios, comunicación de socios, etc.
+AsoGest sirve para gestionar todos los aspectos administrativos relacionados con una Asociación Cultural, como pueden ser asuntos de secretaría, gestión de cuotas, tesorería, administración de socios, comunicación, etc.
 
 
 ![Pantalla principal de Asogest](./public/images/welcome.png) 
 
-La pantalla principal utiliza el sistema de login de Laravel.
 
 ### Pre-requisitos 📋
 
-Para la instalación de un proyecto en un entorno de pruebas necesitamos una máquina virtual XAMPP (o similar). Vea las ![Instrucciones de Instalación](./storage/app/public/documentos/Instrucciones AsoGest.pdf) para más detalles.
+Para la instalación de un proyecto en un entorno de pruebas necesitamos una máquina virtual XAMPP (o similar). Puedes leer las ![Instrucciones de Instalación](./storage/app/public/documentos/Instrucciones AsoGest.pdf) para más detalles.
 
 
 ### Instalación 🔧
@@ -26,8 +25,8 @@ Para instalar una copia del programa CiberPYME y ejecutarla en local se deben se
 3. Abrir la interfaz de MySQL y crear una nueva base de datos llamada "asogest" (o cualquier otro nombre)
 4. Abrir una consola de comandos en la raiz de la carpeta del programa y ejecutar: php artisan key:generate
 5. Ejecutar en la misma consola de comandos: php artisan migrate:fresh --seed
-6. Modificar los HTACCESS de la carpeta raiz y de la carpeta public para gestionar los redireccionamientos correspondientes del TOMCAT. (El de la carpeta Public, si hemos creado bien el de la razi, no hace falta tocarlo, es el que trae por defecto Laravel)
-7. Modificar el .env de la carpeta raiz de ciberpyme para reflejar los cambios correspondientes a la conexión con la base de datos y el entorno de desarrollo.
+6. Modificar los HTACCESS de la carpeta raiz y de la carpeta public para gestionar los redireccionamientos correspondientes del TOMCAT. (El de la carpeta Public, si hemos creado bien el de la raiz, no hace falta tocarlo, es el que trae por defecto Laravel y funciona bien tal y como está)
+7. Modificar el .env de la carpeta raiz para reflejar los cambios correspondientes a la conexión con la base de datos y el entorno de desarrollo.
 
 Para más información y una guía paso a paso, puedes leer las ![Instrucciones de Instalación](./storage/app/public/documentos/Instrucciones AsoGest.pdf)
 
@@ -36,7 +35,7 @@ Para más información y una guía paso a paso, puedes leer las ![Instrucciones 
 
 - Gestión de la Secretaría de la asociación:
     - Vista de Secretario con la gestión completa de socios (creación, edición, etc).
-    - Visor y gestión de las invitaciones del socio.
+    - Visor y gestión de las invitaciones del socio (según su cuota, los socios pueden traer un número determinado de invitados a la asociación).
     - Habilitar y deshabilitar Socios
     - Información de acceso a Drive o carpetas compartidas (externas). Se puede cambiar por otras opciones, como gestión de llaves, etc., a través de dos variables personalizables (Acceso Drive y Acceso Junta).
     - Gestión de las vocalías (creación, eliminación y edición)
@@ -108,17 +107,22 @@ Esta no es la primera versión del programa, ya que, después de revisiones, añ
 
 ## Autor ✒️
 
-
 * **Alejandro Campos** - *Trabajo Inicial y desarrollo completo* - [linkedIn](https://www.linkedin.com/in/acamfue/)
 
 ## Licencia 📄
 
-Licencia de Creative Commons BY-SA
-![Logo Creative Commons BY-SA](https://licensebuttons.net/l/by-sa/4.0/88x31.png)
-AsoGest Gestor de Asociaciones Culturales by Alejandro Campos is licensed [under a Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional License.](https://creativecommons.org/licenses/by-sa/4.0/)
+Este proyecto está bajo la Licencia misma de Laravel, la MIT - mira el archivo [LICENSE.md](LICENSE.md) para más detalles.
+
+Esto te permite a cualquier persona que obtenga una copia de este software y de los archivos de documentación asociados (el "Software"), a utilizar el Software sin restricción, incluyendo sin limitación los derechos a usar, copiar, modificar, fusionar, publicar, distribuir, sublicenciar, y/o vender copias del Software, y a permitir a las personas a las que se les proporcione el Software a hacer lo mismo, sujeto a las siguientes condiciones:
+- El aviso de copyright anterior y este aviso de permiso se incluirán en todas las copias o partes sustanciales del Software. 
 
 ## Gracias a 🎁
 
 * Primero, gracias a mi Asociación, [Portal Lúdico](https://www.portalludico.com). Aunque ya no siga siendo socio activo, la llevo en mi corazón. 📢
 * Por supuesto a mi familia, que me ha soportado después de tantas horas de programación en los ratos libres 🤓.
 * Por último a toda la gente que crea cosas maravillosas y las comparte libre y gratuítamente.
+
+## ¿Quieres invitarme a un café? ☕
+
+Aunque no es necesario, agradeceré cualquier invitación. ¡A tu salud!
+https://paypal.me/acamfue?country.x=ES&locale.x=es_ES
