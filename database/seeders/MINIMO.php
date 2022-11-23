@@ -83,7 +83,7 @@ class MINIMO extends Seeder
             'codPostal' => 28028,
             'telefono' => '666000111',
             'email' => 'admin@asogest.com',
-            'password' => bcrypt('Admin1234'),
+            'password' => bcrypt('Admin1'),
             'foto' => '',
             'invitaciones' => '6',
             'username' => 'admin',
