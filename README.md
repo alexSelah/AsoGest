@@ -30,6 +30,10 @@ Para instalar una copia del programa CiberPYME y ejecutarla en local se deben se
 
 Para más información y una guía paso a paso, puedes leer las [Instrucciones de Instalación](Instrucciones_Instalación_AsoGest.pdf)
 
+## CAPTURAS
+
+![Home](./Capturas/Home.png | width=100)
+
 
 ## Que se ha implementado hasta ahora ⚙️
 
