@@ -17,10 +17,10 @@ return [
     // Estos textos deben ser cambiados para que la aplicación responda a los parametros de la asociación
     // TEXTS THAT SHOWLD BE CHANGED/PERSONALICE
     // These texts must be changed for the right app working
-    'emailInfo' => 'asogest@gmail.com',
-    'emailPrincipal' => 'asogest@gmail.com',
-    'emailTesorero' => 'asogest@gmail.com',
-    'emailSecretario' => 'asogest@gmail.com',
+    'emailInfo' => 'asogest2021@gmail.com',
+    'emailPrincipal' => 'asogest2021@gmail.com',
+    'emailTesorero' => 'asogest2021@gmail.com',
+    'emailSecretario' => 'asogest2021@gmail.com',
     'nombreAsoc' => 'AsoGest',
 
     //Fecha de creación de la Asociación(año-mes-dia) (usado como inicio de contabilidad).
@@ -28,7 +28,7 @@ return [
     'AsocCreatDate' => '2017-07-22',
 
     //Email para reservas de Sala (Se avisará si hay una reserva de sala). Email for room reservation. App will send it an email when a reservation is done
-    'E_ReservSala' => 'asogest@gmail.com',
+    'E_ReservSala' => 'asogest2021@gmail.com',
 
 
     // TEXTOS PAGINA PRINCIPAL E INICIO DE SESIÓN / WELLCOME VIEW AND LOGIN

@@ -28,6 +28,7 @@ use App\TiposCuota;
 use File;
 use Spatie\GoogleCalendar\Event;
 use Log;
+use Throwable;
 
 class GestionFichaController extends Controller
 {
@@ -130,14 +131,23 @@ class GestionFichaController extends Controller
         $listaCalendariosId[] = Lang::get('text.emailPrincipal');
         $AllEvents = new Collection();
         foreach ($listaCalendariosId as $key => $value) {
-            $AllEvents = $AllEvents->merge(Event::get(null,null,[],$value));
+            try{
+                $events = Event::get(null,null,[],$value);
+                if(count($events)>0)
+                {
+                    $AllEvents = $AllEvents->merge(Event::get(null,null,[],$value));
+                }
+            }
+            catch(Throwable $e){
+                $request->session()->flash('alert-danger',  Lang::get('text.ERRORcalendarioNoEncontrado'));
+                return redirect()->route('home');
+            }
         }
         $AllEvents = $AllEvents->toArray();
         //Limpiamos el calendario de efentos pasados y recogemos los del usuario
         $limpia = Calendario::limpiaCalendario();
         $calEvents = $user->eventos()->get()->toArray();
         //dd("AllEvents", $AllEvents);
-
         foreach ($AllEvents as $key => $calendario) {
              foreach ($calEvents as $key => $evento){
                 if($calendario->id == $evento['eventId']){

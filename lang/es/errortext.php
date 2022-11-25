@@ -81,4 +81,5 @@ return [
     'ERRORnoCuotaSelectConfig' => 'ERROR: Has seleccionado el check de borrar una cuota pero no hay ninguna cuota seleccionada o ha habido algún error al  procesar la solicitud',
     'ERRORnoVocaliaSelectConfig' => 'ERROR: Has seleccionado el check de borrar una Vocalía pero no hay ninguna vocalía seleccionada o ha habido algún error al  procesar la solicitud',
     'ERRORconfigVocaliaDupli' => ' ERROR: Ya existe una vocalía con ese mismo nombre, por favor, selecciona otro',
+    'ERRORcalendarioNoEncontrado' => 'ERROR: No se encuentra el calendario asociado a la dirección de email. Por favor, verifica que en el fichero de idioma está bien configurado los emails de Gmail',
 ];
