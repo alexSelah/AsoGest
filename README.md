@@ -1,5 +1,10 @@
 # AsoGest
 
+![License](https://img.shields.io/badge/license-MIT-success)
+![Release](https://img.shields.io/badge/release-Beta-orange)
+![Laravel](https://img.shields.io/badge/Laravel-9.40.1-blue)
+![PHP](https://img.shields.io/badge/PHP-8.0.25-blue)
+
 AsoGest fue creado inicialmente para la asociación de juegos de mesa, rol y wargames a la que estuve asociado. La web fue creada en 2019, y desde entonces la he implementado y mejorando. Lleva más de dos años en funcionamiento en la asociación.
 
 Para desarrollar el proyecto he usado el [framework Laravel](https://github.com/laravel/laravel) por su robustez y facilidad de uso, además de por tener una curva de aprendizaje sencilla. 
@@ -30,9 +35,9 @@ Para instalar una copia del programa CiberPYME y ejecutarla en local se deben se
 
 Para más información y una guía paso a paso, puedes leer las [Instrucciones de Instalación](Instrucciones_Instalación_AsoGest.pdf)
 
-## CAPTURAS
+## CAPTURAS 📷
+<img src="./Capturas/Home.png" width="100"> <img src="./Capturas/Tesoreria.png" width="100"> <img src="./Capturas/Asoc1.png" width="100"> <img src="./Capturas/Asoc2-Ludo.png" width="100"> <img src="./Capturas/Asoc3.png" width="100"> <img src="./Capturas/conf.png" width="100"> <img src="./Capturas/Documentos.png" width="100"> <img src="./Capturas/Secretario.png" width="100"> <img src="./Capturas/FichaSocio.png" width="100"> <img src="./Capturas/gestvoc.png" width="100"> <img src="./Capturas/Vocal1.png" width="100"> <img src="./Capturas/voc2.png" width="100"> <img src="./Capturas/voc3.png" width="100"> <img src="./Capturas/voc4.png" width="100"> <img src="./Capturas/voc5.png" width="100">
 
-![Home](./Capturas/Home.png | width=100)
 
 
 ## Que se ha implementado hasta ahora ⚙️
