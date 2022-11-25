@@ -36,8 +36,8 @@ Para instalar una copia del programa CiberPYME y ejecutarla en local se deben se
 Para más información y una guía paso a paso, puedes leer las [Instrucciones de Instalación](Instrucciones_Instalación_AsoGest.pdf)
 
 ## CAPTURAS 📷
-<img src="./Capturas/Home.png" width="100"> <img src="./Capturas/Tesoreria.png" width="100"> <img src="./Capturas/Asoc1.png" width="100"> <img src="./Capturas/Asoc2-Ludo.png" width="100"> <img src="./Capturas/Asoc3.png" width="100"> <img src="./Capturas/conf.png" width="100"> <img src="./Capturas/Documentos.png" width="100"> <img src="./Capturas/Secretario.png" width="100"> <img src="./Capturas/FichaSocio.png" width="100"> <img src="./Capturas/gestvoc.png" width="100"> <img src="./Capturas/Vocal1.png" width="100"> <img src="./Capturas/voc2.png" width="100"> <img src="./Capturas/voc3.png" width="100"> <img src="./Capturas/voc4.png" width="100"> <img src="./Capturas/voc5.png" width="100">
 
+<img src="./capturas/Home.png" width="100"> <img src="./capturas/Tesoreria.png" width="100"> <img src="./capturas/Asoc1.png" width="100"> <img src="./capturas/Asoc2-Ludo.png" width="100"> <img src="./capturas/Asoc3.png" width="100"> <img src="./capturas/conf.png" width="100"> <img src="./capturas/Documentos.png" width="100"> <img src="./capturas/Secretario.png" width="100"> <img src="./capturas/FichaSocio.png" width="100"> <img src="./capturas/gestvoc.png" width="100"> <img src="./capturas/Vocal1.png" width="100"> <img src="./capturas/voc2.png" width="100"> <img src="./capturas/voc3.png" width="100"> <img src="./capturas/voc4.png" width="100"> <img src="./capturas/voc5.png" width="100">
 
 
 ## Que se ha implementado hasta ahora ⚙️
