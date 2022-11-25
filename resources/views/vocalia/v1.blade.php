@@ -31,30 +31,42 @@
             </tr>
             </thead>
             <tbody>
-                @for ($i = 0; $i < 3; $i++)
-                    @if(!isset($propuestas[$i]))
-                        @switch($i)
-                            @case(0)
-                                <tr>
-                                    <th scope="row"><h3>1º &#129351; </h3></th>
-                                    <td>{{$propuestas[$i]['propuesta']}}</td>
-                                    <td>{{$propuestas[$i]['numVotos']}}</td>
-                                </tr>
-                                @break
-
+                @php
+                    $count = 1;
+                @endphp
+                @for ($i = 0; $i < count($propuestas); $i++)
+                    @if(isset($propuestas[$i]))
+                        @switch($count)
                             @case(1)
                                 <tr>
-                                    <th scope="row"><h3>2º 	&#129352; </h3></th>
+                                    <th scope="row"><h4>1º &#129351; </h4></th>
                                     <td>{{$propuestas[$i]['propuesta']}}</td>
                                     <td>{{$propuestas[$i]['numVotos']}}</td>
                                 </tr>
+                                @php
+                                    $count++;
+                                @endphp
                                 @break
+
                             @case(2)
                                 <tr>
-                                    <th scope="row"><h3>3º &#129353; </h3></th>
+                                    <th scope="row"><h4>2º 	&#129352; </h4></th>
                                     <td>{{$propuestas[$i]['propuesta']}}</td>
                                     <td>{{$propuestas[$i]['numVotos']}}</td>
                                 </tr>
+                                @php
+                                    $count++;
+                                @endphp
+                                @break
+                            @case(3)
+                                <tr>
+                                    <th scope="row"><h4>3º &#129353; </h4></th>
+                                    <td>{{$propuestas[$i]['propuesta']}}</td>
+                                    <td>{{$propuestas[$i]['numVotos']}}</td>
+                                </tr>
+                                @php
+                                    $count++;
+                                @endphp
                                 @break
                         @endswitch
                     @endif
