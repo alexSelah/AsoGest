@@ -61,10 +61,9 @@ Hay usuarios del 4 al 15 para poder jugar con ellos. Todos tienen la misma contr
 Por favor, comunícame cualquier incidencia que encuentres.
 
 ## Que se ha implementado hasta ahora ⚙️
-
 - Gestión de la Secretaría de la asociación:
     - Vista de Secretario con la gestión completa de socios (creación, edición, etc).
-    - Visor y gestión de las invitaciones del socio (según su cuota, los socios pueden traer un número determinado de invitados a la asociación).
+    - Visor y gestión de las invitaciones del socio.
     - Habilitar y deshabilitar Socios
     - Información de acceso a Drive o carpetas compartidas (externas). Se puede cambiar por otras opciones, como gestión de llaves, etc., a través de dos variables personalizables (Acceso Drive y Acceso Junta).
     - Gestión de las vocalías (creación, eliminación y edición)
@@ -77,14 +76,35 @@ Por favor, comunícame cualquier incidencia que encuentres.
 - Avisos automáticos por email cuando está próximo el vencimiento de la cuota (hay que habilitar el Cron en el servidor)
 - Visionado de las cuotas atrasadas, próximas renovaciones, etc.
 - Moratoria de cuotas
-    - Exportación e Importación de los apuntes contables en Excel, copiados en portapapeles o impresión.
-    - Creación de certificado en PDF del coste de mantenimiento del local (Alquiler)
-    - Creación de informes personalizados de tesorería.
+- Exportación e Importación de los apuntes contables en Excel, copiados en portapapeles o impresión.
+- Creación de certificado en PDF del coste de mantenimiento del local (Alquiler)
+- Creación de informes personalizados de tesorería.
 - Gestión de la ficha del socio
     - Datos personales (nombre, apellido, dirección, email, teléfono, etc.)
     - Gestión de eventos creados por el socio (eliminar los eventos y reservas realizadas) (necesaria cuenta de GMAIL)
     - Gestión por parte del socio de sus invitaciones
     - Preguntas sobre Privacidad y permisos del socio para comunicaciones.
+    - Gestión de preferencias de Vocalías (muestra el interés del socio en esa vocalía. Se puede usar para destinar parte de la cuota a sus vocalías o intereses)
+    - Gestión del rol del socio (tesorero, secretario, vocal, socio normal, etc…)
+    - Gestión de eventos creados por el socio (necesaria cuenta de GMAIL).
+- Gestión de Vocalías (Secciones o Grupo de Trabajo)
+    - Cada vocalía actúa de manera independiente
+    - Calendario independiente para cada vocalía (necesaria cuenta de GMAIL)
+    - Panel del vocal donde se expone información personalizada
+    - Gestión de propuestas de compra con un sistema de votaciones
+    - Histórico de compras de esa vocalía
+    - Gestión del presupuesto de cada vocalía
+    - Envío de email del vocal a los socios interesados en la vocalía o a socios en concreto.
+- Gestión de Eventos
+    - Calendario de Google con sincronización (necesaria cuenta de GMAIL).
+    - Creación de eventos por vocalía, generales o importantes (necesaria cuenta de GMAIL).
+    - Visualización de los próximos eventos en la web (diferentes formatos)
+- Emails:
+    - Envíos de email entre socios (al crear un evento)
+    - Envío de email Vocal-Socio (al hacer una compra, para hacer un comunicado de vocalía, etc.)
+    - Envío de email de socio a junta directiva.
+- Visor de Registros (ver las acciones que se han realizado en la web y quién las ha hecho)
+- Gestor Documental (almacenamiento de documentos de la Asociación)
 
 Al ser un proyecto realizado por mi únicamente (un solo programador), desde cero, espero que contenga bugs y fallos fácilmente solucionables. Además, una refactorización no le vendría mal. Tampoco he seguido ninguna metodología de programación. Se ha hecho por placer. 
 
