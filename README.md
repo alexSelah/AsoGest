@@ -39,6 +39,26 @@ Para más información y una guía paso a paso, puedes leer las [Instrucciones d
 
 <img src="./capturas/Home.png" width="100"> <img src="./capturas/Tesoreria.png" width="100"> <img src="./capturas/Asoc1.png" width="100"> <img src="./capturas/Asoc2-Ludo.png" width="100"> <img src="./capturas/Asoc3.png" width="100"> <img src="./capturas/conf.png" width="100"> <img src="./capturas/Documentos.png" width="100"> <img src="./capturas/Secretario.png" width="100"> <img src="./capturas/FichaSocio.png" width="100"> <img src="./capturas/gestvoc.png" width="100"> <img src="./capturas/Vocal1.png" width="100"> <img src="./capturas/voc2.png" width="100"> <img src="./capturas/voc3.png" width="100"> <img src="./capturas/voc4.png" width="100"> <img src="./capturas/voc5.png" width="100">
 
+## ¿QUIERES PROBARLO? 👍 
+
+He creado una replica en una web. Es casi completamente operativa. Puedes probar casi todas las funciones y ver como se vería en un entorno real.
+Los datos contenidos son ficticios y se resetearám cada cierto tiempo.
+
+Para ir, pincha en este enlace: [https://asogest.com.es](https://asogest.com.es)
+
+Puedes jugar con algunos de estos usuarios:
+
+| USUARIO      | CONTRASEÑA |
+| ----------- | ----------- |
+| admin      | admin1       |
+| tesorero   | tesorero1        |
+| secretario   | secretario1        |
+| usuario4   | usuario1234        |
+| usuario5   | usuario1234        |
+| usuario6   | usuario1234        |
+
+Hay usuarios del 4 al 15 para poder jugar con ellos. Todos tienen la misma contraseña.
+Por favor, comunícame cualquier incidencia que encuentres.
 
 ## Que se ha implementado hasta ahora ⚙️
 
