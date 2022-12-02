@@ -147,7 +147,7 @@ Esto te permite a cualquier persona que obtenga una copia de este software y de 
 
 ## Gracias a 🎁
 
-* Primero, gracias a mi Asociación, [Portal Lúdico](https://www.portalludico.com). Aunque ya no siga siendo socio activo, la llevo en mi corazón. 📢
+* Primero, gracias a mi Asociación, [Portal Lúdico](https://www.portalludico.com). Aunque ya no siga siendo socio activo, la llevo en mi corazón. También gracias a mi anterior Asociación, [Mecatol Rex]([https://www.portalludico.com](https://www.mecatolrex.com/)), donde hice muy buenos amigos y disfruté jugando. Aprendí mucho de como gestionar una asociación y les llevo en el corazón. 📢
 * Por supuesto a mi familia, que me ha soportado después de tantas horas de programación en los ratos libres 🤓.
 * Por último a toda la gente que crea cosas maravillosas y las comparte libre y gratuítamente.
 
