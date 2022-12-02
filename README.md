@@ -5,7 +5,7 @@
 ![Laravel](https://img.shields.io/badge/Laravel-9.40.1-blue)
 ![PHP](https://img.shields.io/badge/PHP-8.0.25-blue)
 
-AsoGest fue creado inicialmente para la asociación de juegos de mesa, rol y wargames a la que estuve asociado. La web fue creada en 2019, y desde entonces la he implementado y mejorando. Lleva más de dos años en funcionamiento en la asociación.
+AsoGest fue creado inicialmente para la asociación de juegos de mesa, rol y wargames a la que estuve asociado. La web fue creada en 2019, y desde entonces la he implementado y mejorado. Lleva más de dos años en funcionamiento en la asociación.
 
 Para desarrollar el proyecto he usado el [framework Laravel](https://github.com/laravel/laravel) por su robustez y facilidad de uso, además de por tener una curva de aprendizaje sencilla. 
 
@@ -23,14 +23,14 @@ Para la instalación de un proyecto en un entorno de pruebas necesitamos una má
 ### Instalación 🔧
 
 Aquí está contenido todo el código fuente del proyecto en Laravel. Pero se puede instalar una copia completamente funcional en un servidor local XAMPP o en un servidor de internet.
-Para instalar una copia del programa CiberPYME y ejecutarla en local se deben seguir siguientes pasos, adaptándolos al entorno que se haya escogido. En general deberemos:
+Para instalar una copia del programa Asogest y ejecutarla en local se deben seguir siguientes pasos, adaptándolos al entorno que se haya escogido. En general deberemos:
 
 1. Crear un servidor local con XAMPP
 2. Subir la carpera asogest a la carpeta HTDOCS de XAMPP
 3. Abrir la interfaz de MySQL y crear una nueva base de datos llamada "asogest" (o cualquier otro nombre)
 4. Abrir una consola de comandos en la raiz de la carpeta del programa y ejecutar: php artisan key:generate
 5. Ejecutar en la misma consola de comandos: php artisan migrate:fresh --seed
-6. Modificar los HTACCESS de la carpeta raiz y de la carpeta public para gestionar los redireccionamientos correspondientes del TOMCAT. (El de la carpeta Public, si hemos creado bien el de la raiz, no hace falta tocarlo, es el que trae por defecto Laravel y funciona bien tal y como está)
+6. (si es necesario) Modificar los HTACCESS de la carpeta raiz y de la carpeta public para gestionar los redireccionamientos correspondientes del TOMCAT. (El de la carpeta Public, si hemos creado bien el de la raiz, no hace falta tocarlo, es el que trae por defecto Laravel y funciona bien tal y como está)
 7. Modificar el .env de la carpeta raiz para reflejar los cambios correspondientes a la conexión con la base de datos y el entorno de desarrollo.
 
 Para más información y una guía paso a paso, puedes leer las [Instrucciones de Instalación](Instrucciones_Instalación_AsoGest.pdf)
